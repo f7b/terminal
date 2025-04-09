@@ -1,2 +1,5 @@
-# cmdline prompt look
+# cmdline prompt look - user
 PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null); echo'; PS1='\[\e[92m\]•\[\e[0m\] \A \[\e[38;5;242m\]\w\[\e[0m\] \[\e[91;1;3m\]${PS1_CMD1}\n\[\e[0;92m\]\$\[\e[0m\] '
+
+# cmdline prompt look - root
+PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null); echo'; PS1='\[\e[91m\]•\[\e[0m\] \A \[\e[38;5;242m\]\w\[\e[0m\] \[\e[91;1;3m\]${PS1_CMD1}\n\[\e[0;91m\]\$\[\e[0m\] '
